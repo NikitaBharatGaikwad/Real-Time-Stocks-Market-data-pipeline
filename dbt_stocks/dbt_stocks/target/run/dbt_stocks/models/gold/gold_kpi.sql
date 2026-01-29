@@ -1,0 +1,22 @@
+
+  create or replace   view STOCKS_MDS.COMMON.gold_kpi
+  
+  
+  
+  
+  as (
+    select
+    symbol,
+    current_price,
+    change_amount,
+    change_percent
+from (
+    select *,
+           row_number() over (partition by symbol order by fetched_at desc) as rn
+    from STOCKS_MDS.COMMON.silver_clean_stock_quotes
+) t
+where rn = 1
+
+-- This query returns the latest (most recent) stock price record for each symbol by keeping only the newest row based on fetched_at
+  );
+

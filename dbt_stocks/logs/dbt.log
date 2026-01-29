@@ -1,0 +1,33 @@
+[0m15:45:21.425263 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026377D0D9F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026378F91750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026379ECFB20>]}
+
+
+============================== 15:45:21.430791 | ebff441a-b084-41f9-81ed-a714b745f6a1 ==============================
+[0m15:45:21.430791 [info ] [MainThread]: Running with dbt=1.11.2
+[0m15:45:21.431794 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\Nikita\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'indirect_selection': 'eager', 'use_colors': 'True', 'invocation_command': 'dbt init dbt_stocks', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m15:45:21.459630 [info ] [MainThread]: Creating dbt configuration folder at C:\Users\Nikita\.dbt
+[0m15:45:21.462475 [debug] [MainThread]: Starter project path: C:\real_time_stocks\venv\lib\site-packages\dbt\include\starter_project
+[0m15:45:21.568405 [info ] [MainThread]: 
+Your new dbt project "dbt_stocks" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m15:45:21.575327 [info ] [MainThread]: Setting up your profile.
+[0m15:45:50.397660 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m15:45:50.398667 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m15:45:50.398667 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m15:51:42.798914 [info ] [MainThread]: Profile dbt_stocks written to C:\Users\Nikita\.dbt\profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m15:51:42.805769 [debug] [MainThread]: Command `dbt init` succeeded at 15:51:42.804767 after 381.47 seconds
+[0m15:51:42.806787 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026377D0D9F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026379694520>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000263796CB0A0>]}
+[0m15:51:42.808798 [debug] [MainThread]: Flushing usage events
+[0m15:51:42.840891 [debug] [MainThread]: An error was encountered while trying to flush usage events
