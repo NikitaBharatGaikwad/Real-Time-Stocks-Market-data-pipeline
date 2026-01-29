@@ -1,9 +1,10 @@
 # Real-Time-Stocks-Market-data-pipeline
 End-to-end real-time stock market data pipeline using Kafka, MinIO, Airflow, dbt, and Snowflake with bronze–silver–gold analytics modeling.
 
-#Project Structure
+## Project Structure
+
+```text
 real-time-stocks-pipeline/
-│
 ├── producer/                         # Kafka Producer (Finnhub API → Kafka)
 │   └── producer.py
 │
@@ -18,7 +19,7 @@ real-time-stocks-pipeline/
 │   └── models/
 │       ├── bronze/                   # Raw structured data
 │       │   ├── bronze_stg_stock_quotes.sql
-│   │   │   └── sources.yml
+│       │   └── sources.yml
 │       │
 │       ├── silver/                   # Cleaned & validated data
 │       │   └── silver_clean_stock_quotes.sql
@@ -43,4 +44,3 @@ real-time-stocks-pipeline/
 ├── docker-compose.yml                # Kafka, Zookeeper, MinIO, Airflow, Postgres
 ├── requirements.txt
 └── README.md
-
